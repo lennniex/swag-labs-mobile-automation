@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Robot Framework outputs
+output.xml
+log.html
+report.html
+reports/*.xml
+reports/*.html
+reports/*.png
+reports/screenshots/
+
+# Appium / mobile binaries (no versionar binarios)
+apps/*.apk
+apps/*.app
+apps/*.app.zip
+apps/*.ipa
+apps/*.aab
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp

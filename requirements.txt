@@ -1,0 +1,5 @@
+robotframework==7.1.1
+robotframework-appiumlibrary==2.1.0
+Appium-Python-Client==4.2.1
+selenium==4.25.0
+PyYAML==6.0.2
