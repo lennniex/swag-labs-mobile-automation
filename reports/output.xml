@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.0 on win32)" generated="2026-04-25T00:24:15.287074" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.12.0 on win32)" generated="2026-04-25T06:30:01.610546" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="G:\softwareps\swag-labs-mobile-automation\tests">
 <suite id="s1-s1" name="Checkout Flow" source="G:\softwareps\swag-labs-mobile-automation\tests\checkout_flow.robot">
 <kw name="Abrir Aplicacion" owner="common" type="SETUP">
@@ -8,19 +8,19 @@
 <arg>${PLATFORM_NAME}</arg>
 <arg>PLATFORM_NAME no está definido — ¿olvidó --variablefile?</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.960551" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
 <arg>${APPIUM_SERVER}</arg>
 <arg>APPIUM_SERVER no está definido.</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.961552" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
 <arg>${APP_PATH}</arg>
 <arg>APP_PATH no está definido.</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.962553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <kw name="Catenate" owner="BuiltIn">
 <var>${msg_binario}</var>
@@ -29,16 +29,16 @@
 <arg>Descargue el .apk/.app desde https://github.com/saucelabs/my-demo-app-rn/releases</arg>
 <arg>y colóquelo en ./apps/</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.963553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <kw name="File Should Exist" owner="OperatingSystem">
 <arg>${APP_PATH}</arg>
 <arg>${msg_binario}</arg>
 <doc>Fails unless the given ``path`` points to an existing file.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.964555" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <doc>Verifica que las variables mínimas existan y que el binario esté accesible.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.958552" elapsed="0.006003"/>
+<status status="PASS" start="2026-04-25T06:30:02.626874" elapsed="0.000541"/>
 </kw>
 <kw name="Construir Capabilities" owner="common">
 <kw name="Create Dictionary" owner="BuiltIn">
@@ -51,7 +51,7 @@
 <arg>noReset=${NO_RESET}</arg>
 <arg>fullReset=${FULL_RESET}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.966557" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="'${PLATFORM_NAME}' == 'Android'">
@@ -64,9 +64,9 @@
 <arg>uiautomator2ServerInstallTimeout=${UIAUTOMATOR2_SERVER_INSTALL_TIMEOUT}</arg>
 <arg>noSign=${True}</arg>
 <doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.967557" elapsed="0.000997"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:15.967557" elapsed="0.000997"/>
+<status status="PASS" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </branch>
 <branch type="ELSE IF" condition="'${PLATFORM_NAME}' == 'iOS'">
 <kw name="Set To Dictionary" owner="Collections">
@@ -77,23 +77,23 @@
 <arg>wdaLaunchTimeout=${WDA_LAUNCH_TIMEOUT}</arg>
 <arg>wdaConnectionTimeout=${WDA_CONNECTION_TIMEOUT}</arg>
 <doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.969553" elapsed="0.001005"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:15.968554" elapsed="0.002004"/>
+<status status="PASS" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:15.967557" elapsed="0.003001"/>
+<status status="PASS" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </if>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Variable Should Exist" owner="BuiltIn">
 <arg>${UDID}</arg>
 <doc>Fails unless the given variable exists within the current scope.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.971553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <var>${udid_defined}</var>
 <arg>Variable Should Exist</arg>
 <arg>${UDID}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.970558" elapsed="0.000995"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="${udid_defined} and '${UDID}' != ''">
@@ -101,26 +101,26 @@
 <arg>${caps}</arg>
 <arg>udid=${UDID}</arg>
 <doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.971553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:15.971553" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:15.971553" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </if>
 <return>
 <value>${caps}</value>
-<status status="PASS" start="2026-04-25T00:24:15.971553" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </return>
 <var>${capabilities}</var>
 <doc>Construye el diccionario de capabilities según la plataforma.
 Centraliza TODAS las diferencias Android/iOS en un solo punto.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.966557" elapsed="0.004996"/>
+<status status="PASS" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <kw name="Log Dictionary" owner="Collections">
 <arg>${capabilities}</arg>
 <arg>level=INFO</arg>
 <doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.972553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${APPIUM_SERVER}</arg>
@@ -132,43 +132,43 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.972553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.000000"/>
 </kw>
 <kw name="Set Appium Timeout" owner="AppiumLibrary">
 <arg>${DEFAULT_TIMEOUT}</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.972553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.627415" elapsed="0.014115"/>
 </kw>
 <doc>Abre la app con capabilities dinámicas según Android.
 Falla temprano con mensaje claro si falta configuración.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.957555" elapsed="0.014998"/>
+<status status="PASS" start="2026-04-25T06:30:02.624874" elapsed="0.016656"/>
 </kw>
 <test id="s1-s1-t1" name="Compra exitosa de Sauce Labs Backpack" line="16">
-<kw name="Given que el usuario está en la pantalla de Login" owner="bdd_steps">
+<kw name="Given que el usuario abre la aplicación y se encuentra en la pantalla de Login" owner="bdd_steps">
 <kw name="Verificar Que Estoy En Login" owner="login_page">
 <kw name="Esperar Elemento Visible" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.975559" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.646766" elapsed="0.001000"/>
 </kw>
 <arg>${LOGIN_USERNAME_FIELD}</arg>
-<status status="PASS" start="2026-04-25T00:24:15.974553" elapsed="0.001006"/>
+<status status="PASS" start="2026-04-25T06:30:02.646766" elapsed="0.001000"/>
 </kw>
 <kw name="Esperar Elemento Visible" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.976556" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.647766" elapsed="0.000000"/>
 </kw>
 <arg>${LOGIN_PASSWORD_FIELD}</arg>
-<status status="PASS" start="2026-04-25T00:24:15.975559" elapsed="0.000997"/>
+<status status="PASS" start="2026-04-25T06:30:02.647766" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:15.974553" elapsed="0.002003"/>
+<status status="PASS" start="2026-04-25T06:30:02.645770" elapsed="0.003000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:15.974553" elapsed="0.002003"/>
+<status status="PASS" start="2026-04-25T06:30:02.645770" elapsed="0.003000"/>
 </kw>
 <kw name="When el usuario ingresa las credenciales válidas" owner="bdd_steps">
 <kw name="Autenticar Con Credenciales" owner="login_page">
@@ -178,26 +178,26 @@ Falla temprano con mensaje claro si falta configuración.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.984555" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.650768" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.985556" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.650768" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.985556" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.650768" elapsed="0.001000"/>
 </kw>
 <arg>${LOGIN_USERNAME_FIELD}</arg>
 <arg>${usuario}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.983557" elapsed="0.002999"/>
+<status status="PASS" start="2026-04-25T06:30:02.650768" elapsed="0.001000"/>
 </kw>
 <arg>${usuario}</arg>
-<status status="PASS" start="2026-04-25T00:24:15.981557" elapsed="0.004999"/>
+<status status="PASS" start="2026-04-25T06:30:02.649767" elapsed="0.002001"/>
 </kw>
 <kw name="Ingresar Password" owner="login_page">
 <kw name="Esperar Y Escribir" owner="common">
@@ -205,44 +205,44 @@ Falla temprano con mensaje claro si falta configuración.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.987558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.652764" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.987558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.653766" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.988558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.653766" elapsed="0.000000"/>
 </kw>
 <arg>${LOGIN_PASSWORD_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.986556" elapsed="0.002002"/>
+<status status="PASS" start="2026-04-25T06:30:02.651768" elapsed="0.001998"/>
 </kw>
 <kw name="Hide Keyboard" owner="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.988558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.654765" elapsed="0.000000"/>
 </kw>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-25T00:24:15.986556" elapsed="0.003006"/>
+<status status="PASS" start="2026-04-25T06:30:02.651768" elapsed="0.002997"/>
 </kw>
 <kw name="Presionar Boton Login" owner="login_page">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.990556" elapsed="0.001003"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.655765" elapsed="0.000000"/>
 </kw>
 <var>${ok}</var>
 <arg>Click Element</arg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.990556" elapsed="0.001003"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.655765" elapsed="0.001001"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${ok}">
@@ -251,26 +251,26 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.994554" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.657768" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:15.995556" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.658771" elapsed="0.000993"/>
 </kw>
 <arg>${LOGIN_BUTTON_ALT}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.993560" elapsed="0.001996"/>
+<status status="PASS" start="2026-04-25T06:30:02.656766" elapsed="0.002998"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:15.992562" elapsed="0.002994"/>
+<status status="PASS" start="2026-04-25T06:30:02.656766" elapsed="0.002998"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:15.991559" elapsed="0.004998"/>
+<status status="PASS" start="2026-04-25T06:30:02.656766" elapsed="0.002998"/>
 </if>
-<status status="PASS" start="2026-04-25T00:24:15.989562" elapsed="0.006995"/>
+<status status="PASS" start="2026-04-25T06:30:02.654765" elapsed="0.004999"/>
 </kw>
 <arg>${usuario}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-04-25T00:24:15.980559" elapsed="0.015998"/>
+<status status="PASS" start="2026-04-25T06:30:02.649767" elapsed="0.009997"/>
 </kw>
 <kw name="Verificar Que Estoy En Catalogo" owner="products_page">
 <kw name="Esperar Elemento Visible" owner="common">
@@ -278,18 +278,18 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.004556" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <arg>${PRODUCTS_HEADER}</arg>
 <arg>timeout=${LONG_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:15.996557" elapsed="0.008997"/>
+<status status="PASS" start="2026-04-25T06:30:02.661766" elapsed="0.003758"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:15.996557" elapsed="0.008997"/>
+<status status="PASS" start="2026-04-25T06:30:02.660764" elapsed="0.004760"/>
 </kw>
 <arg>bob@example.com</arg>
 <arg>10203040</arg>
 <doc>Autentica con el usuario estándar del reto.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.977554" elapsed="0.028000"/>
+<status status="PASS" start="2026-04-25T06:30:02.648770" elapsed="0.016754"/>
 </kw>
 <kw name="And selecciona el producto &quot;Sauce Labs Backpack&quot; para añadirlo al carrito" owner="bdd_steps" source_name="selecciona el producto &quot;${nombre_producto}&quot; para añadirlo al carrito">
 <kw name="Seleccionar Producto Por Nombre" owner="products_page">
@@ -297,7 +297,7 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <var>${locator}</var>
 <arg>xpath=//*[@text='${nombre_producto}']</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.007554" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <kw name="Scroll Hasta Elemento" owner="common">
 <for flavor="IN RANGE">
@@ -306,22 +306,22 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.009553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <var>${visible}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.008551" elapsed="0.001002"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="${visible}">
 <return>
-<status status="PASS" start="2026-04-25T00:24:16.009553" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2026-04-25T00:24:16.009553" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.009553" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </if>
 <kw name="Swipe By Percent" owner="AppiumLibrary">
 <arg>50</arg>
@@ -331,43 +331,43 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <arg>duration=800</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.010553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <var name="${i}"/>
-<status status="PASS" start="2026-04-25T00:24:16.008551" elapsed="0.002002"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </iter>
 <var>${i}</var>
 <value>${max_intentos}</value>
-<status status="PASS" start="2026-04-25T00:24:16.008551" elapsed="0.002002"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </for>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>msg=Elemento ${locator} no encontrado luego de ${max_intentos} swipes.</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.010553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <arg>${locator}</arg>
 <doc>Scroll robusto cross-platform hasta hacer visible el elemento.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.008551" elapsed="0.002002"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Hacer Clic" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.011550" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.665524" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.012552" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.676291" elapsed="0.000000"/>
 </kw>
 <arg>${locator}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.011550" elapsed="0.001002"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.011560"/>
 </kw>
 <arg>${nombre_producto}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.007554" elapsed="0.004998"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.011560"/>
 </kw>
 <kw name="Verificar Que Estoy En Detalle Producto" owner="product_details_page">
 <kw name="Esperar Elemento Visible" owner="common">
@@ -375,13 +375,13 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.013551" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${ADD_TO_CART_BUTTON}</arg>
 <arg>timeout=${DEFAULT_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.012552" elapsed="0.000999"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.012552" elapsed="0.000999"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Agregar Al Carrito" owner="product_details_page">
 <kw name="Esperar Y Hacer Clic" owner="common">
@@ -389,22 +389,22 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.014554" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.015554" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${ADD_TO_CART_BUTTON}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.014554" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.013551" elapsed="0.002003"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <doc>Seleccionar el producto desde el catálogo, abrir su detalle
 y añadirlo al carrito. Valida el contador del cart badge.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.006552" elapsed="0.009002"/>
+<status status="PASS" start="2026-04-25T06:30:02.665524" elapsed="0.011560"/>
 </kw>
 <kw name="And completa el proceso de Checkout con datos ficticios" owner="bdd_steps">
 <kw name="Abrir Carrito" owner="products_page">
@@ -413,18 +413,18 @@ y añadirlo al carrito. Valida el contador del cart badge.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.018552" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.019552" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${CART_ICON}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.018552" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.017553" elapsed="0.001999"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Verificar Que Estoy En Carrito" owner="cart_page">
 <kw name="Esperar Elemento Visible" owner="common">
@@ -432,33 +432,33 @@ y añadirlo al carrito. Valida el contador del cart badge.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.020555" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${CART_SCREEN_TITLE}</arg>
 <arg>timeout=${LONG_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.020555" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.019552" elapsed="0.001003"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Verificar Que El Carrito Contiene" owner="cart_page">
 <kw name="Set Variable" owner="BuiltIn">
 <var>${locator}</var>
 <arg>xpath=//*[@text='${nombre_producto}']</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.021554" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Elemento Visible" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.022553" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.021554" elapsed="0.000999"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>Sauce Labs Backpack</arg>
-<status status="PASS" start="2026-04-25T00:24:16.021554" elapsed="0.000999"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Ir A Checkout" owner="cart_page">
 <kw name="Scroll Hasta Elemento" owner="common">
@@ -468,22 +468,22 @@ y añadirlo al carrito. Valida el contador del cart badge.</doc>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.024556" elapsed="0.001001"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <var>${visible}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.024556" elapsed="0.001001"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="${visible}">
 <return>
-<status status="PASS" start="2026-04-25T00:24:16.025557" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2026-04-25T00:24:16.025557" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.025557" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </if>
 <kw name="Swipe By Percent" owner="AppiumLibrary">
 <arg>50</arg>
@@ -493,43 +493,43 @@ y añadirlo al carrito. Valida el contador del cart badge.</doc>
 <arg>duration=800</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.026555" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <var name="${i}"/>
-<status status="PASS" start="2026-04-25T00:24:16.024556" elapsed="0.001999"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </iter>
 <var>${i}</var>
 <value>${max_intentos}</value>
-<status status="PASS" start="2026-04-25T00:24:16.023553" elapsed="0.003002"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </for>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>msg=Elemento ${locator} no encontrado luego de ${max_intentos} swipes.</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.027558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${PROCEED_TO_CHECKOUT_BUTTON}</arg>
 <arg>max_intentos=3</arg>
 <doc>Scroll robusto cross-platform hasta hacer visible el elemento.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.023553" elapsed="0.004005"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Hacer Clic" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.030552" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.030552" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${PROCEED_TO_CHECKOUT_BUTTON}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.029556" elapsed="0.000996"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.022553" elapsed="0.007999"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Verificar Que Estoy En Checkout Direccion" owner="checkout_address_page">
 <kw name="Esperar Elemento Visible" owner="common">
@@ -537,13 +537,13 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.031548" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_FULL_NAME}</arg>
 <arg>timeout=${LONG_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.031548" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.030552" elapsed="0.000996"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.000000"/>
 </kw>
 <kw name="Diligenciar Direccion Envio" owner="checkout_address_page">
 <kw name="Esperar Y Escribir" owner="common">
@@ -551,46 +551,46 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.034555" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.035556" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.036087" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_FULL_NAME}</arg>
 <arg>${nombre}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.033557" elapsed="0.002530"/>
+<status status="PASS" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Escribir" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.036087" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.037076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.037076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_ADDRESS_LINE_1}</arg>
 <arg>${direccion}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.036087" elapsed="0.000989"/>
+<status status="PASS" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Esperar Y Escribir" owner="common">
@@ -598,53 +598,53 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.038076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.038076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.038076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_ADDRESS_LINE_2}</arg>
 <arg>${direccion_2}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.037076" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>'${direccion_2}' != ''</arg>
 <arg>Esperar Y Escribir</arg>
 <arg>${INPUT_ADDRESS_LINE_2}</arg>
 <arg>${direccion_2}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.037076" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Escribir" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.039081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.039081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.039081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_CITY}</arg>
 <arg>${ciudad}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.038076" elapsed="0.001005"/>
+<status status="PASS" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Esperar Y Escribir" owner="common">
@@ -652,81 +652,81 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.040078" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.041078" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.041078" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_STATE_REGION}</arg>
 <arg>${region}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.040078" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>'${region}' != ''</arg>
 <arg>Esperar Y Escribir</arg>
 <arg>${INPUT_STATE_REGION}</arg>
 <arg>${region}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.040078" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Escribir" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.042080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.042080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.042080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_ZIP_CODE}</arg>
 <arg>${zip}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.041078" elapsed="0.001002"/>
+<status status="PASS" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Escribir" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.043078" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.043078" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.043078" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.693762" elapsed="0.000000"/>
 </kw>
 <arg>${INPUT_COUNTRY}</arg>
 <arg>${pais}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.043078" elapsed="0.000998"/>
+<status status="PASS" start="2026-04-25T06:30:02.693762" elapsed="0.015627"/>
 </kw>
 <kw name="Hide Keyboard" owner="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.044076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.709773" elapsed="0.000000"/>
 </kw>
 <arg>nombre=Lennin Martinez</arg>
 <arg>direccion=Calle 100 #15-20</arg>
@@ -734,7 +734,7 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <arg>zip=110111</arg>
 <arg>pais=Colombia</arg>
 <doc>Llena el formulario de dirección con los datos ficticios provistos.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.032552" elapsed="0.011524"/>
+<status status="PASS" start="2026-04-25T06:30:02.693111" elapsed="0.016662"/>
 </kw>
 <kw name="Continuar A Pago" owner="checkout_address_page">
 <kw name="Scroll Hasta Elemento" owner="common">
@@ -744,22 +744,22 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.045076" elapsed="0.001003"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <var>${visible}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.045076" elapsed="0.001003"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="${visible}">
 <return>
-<status status="PASS" start="2026-04-25T00:24:16.046079" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2026-04-25T00:24:16.046079" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.046079" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </if>
 <kw name="Swipe By Percent" owner="AppiumLibrary">
 <arg>50</arg>
@@ -769,37 +769,37 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <arg>duration=800</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.046079" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <var name="${i}"/>
-<status status="PASS" start="2026-04-25T00:24:16.045076" elapsed="0.001003"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </iter>
 <var>${i}</var>
 <value>${max_intentos}</value>
-<status status="PASS" start="2026-04-25T00:24:16.045076" elapsed="0.001003"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </for>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>msg=Elemento ${locator} no encontrado luego de ${max_intentos} swipes.</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.046079" elapsed="0.000997"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>${TO_PAYMENT_BUTTON}</arg>
 <arg>max_intentos=3</arg>
 <doc>Scroll robusto cross-platform hasta hacer visible el elemento.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.044076" elapsed="0.003000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${TO_PAYMENT_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.047076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <var>${ok}</var>
 <arg>Click Element</arg>
 <arg>${TO_PAYMENT_BUTTON}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.047076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${ok}">
@@ -808,24 +808,24 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.048076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.048076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>${TO_PAYMENT_BUTTON_FB}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.047076" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.047076" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.047076" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </if>
 <doc>En Android el botón puede quedar debajo del teclado/fold;
 hacemos scroll defensivo antes de presionarlo.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.044076" elapsed="0.004000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Verificar Que Estoy En Checkout Pago" owner="checkout_payment_page">
 <kw name="Esperar Elemento Visible" owner="common">
@@ -833,13 +833,13 @@ hacemos scroll defensivo antes de presionarlo.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.051084" elapsed="0.000999"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>${PAYMENT_CARD_NUMBER}</arg>
 <arg>timeout=${LONG_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.051084" elapsed="0.000999"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.048076" elapsed="0.004007"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Diligenciar Datos Tarjeta" owner="checkout_payment_page">
 <kw name="Esperar Y Escribir" owner="common">
@@ -847,103 +847,103 @@ hacemos scroll defensivo antes de presionarlo.</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.053081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.053081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.053081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>${PAYMENT_FULL_NAME}</arg>
 <arg>${nombre}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.052083" elapsed="0.000998"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Escribir" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.054080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.054080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.054080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>${PAYMENT_CARD_NUMBER}</arg>
 <arg>${numero_tarjeta}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.053081" elapsed="0.000999"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Escribir" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.055080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.056080" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.057081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>${PAYMENT_EXPIRATION_DATE}</arg>
 <arg>${vencimiento}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.055080" elapsed="0.002001"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Esperar Y Escribir" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.059082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Clear Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.059082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>${texto}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.059082" elapsed="0.000999"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>${PAYMENT_SECURITY_CODE}</arg>
 <arg>${cvv}</arg>
 <doc>Espera a que el input sea visible y escribe el texto.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.058082" elapsed="0.001999"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Hide Keyboard" owner="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.060081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <arg>nombre=Lennin Martinez</arg>
 <arg>numero_tarjeta=4111111111111111</arg>
 <arg>vencimiento=12/30</arg>
 <arg>cvv=123</arg>
-<status status="PASS" start="2026-04-25T00:24:16.052083" elapsed="0.007998"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <kw name="Revisar Pedido" owner="checkout_payment_page">
 <kw name="Scroll Hasta Elemento" owner="common">
@@ -953,22 +953,22 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.062083" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <var>${visible}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.062083" elapsed="0.000998"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="${visible}">
 <return>
-<status status="PASS" start="2026-04-25T00:24:16.063081" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2026-04-25T00:24:16.063081" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.063081" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </if>
 <kw name="Swipe By Percent" owner="AppiumLibrary">
 <arg>50</arg>
@@ -978,37 +978,37 @@ a particular key, ex. `Done`. In Android, no parameters are used.</doc>
 <arg>duration=800</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.063081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </kw>
 <var name="${i}"/>
-<status status="PASS" start="2026-04-25T00:24:16.062083" elapsed="0.000998"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </iter>
 <var>${i}</var>
 <value>${max_intentos}</value>
-<status status="PASS" start="2026-04-25T00:24:16.061081" elapsed="0.002000"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.000000"/>
 </for>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>msg=Elemento ${locator} no encontrado luego de ${max_intentos} swipes.</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.063081" elapsed="0.000995"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.710626" elapsed="0.014233"/>
 </kw>
 <arg>${REVIEW_ORDER_BUTTON}</arg>
 <arg>max_intentos=3</arg>
 <doc>Scroll robusto cross-platform hasta hacer visible el elemento.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.061081" elapsed="0.002995"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.014233"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${REVIEW_ORDER_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.064076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.725858" elapsed="0.000000"/>
 </kw>
 <var>${ok}</var>
 <arg>Click Element</arg>
 <arg>${REVIEW_ORDER_BUTTON}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.064076" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.725858" elapsed="0.001000"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${ok}">
@@ -1017,22 +1017,22 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.065077" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.066083" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <arg>${REVIEW_ORDER_BUTTON_FB}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.064076" elapsed="0.002007"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.064076" elapsed="0.002007"/>
+<status status="PASS" start="2026-04-25T06:30:02.726858" elapsed="0.000441"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.064076" elapsed="0.003007"/>
+<status status="PASS" start="2026-04-25T06:30:02.726858" elapsed="0.000441"/>
 </if>
-<status status="PASS" start="2026-04-25T00:24:16.061081" elapsed="0.006002"/>
+<status status="PASS" start="2026-04-25T06:30:02.710626" elapsed="0.016673"/>
 </kw>
 <kw name="Verificar Que Estoy En Review Order" owner="checkout_review_page">
 <kw name="Esperar Elemento Visible" owner="common">
@@ -1040,13 +1040,13 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.068082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <arg>${REVIEW_SCREEN_TITLE}</arg>
 <arg>timeout=${LONG_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.068082" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.067083" elapsed="0.000999"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <kw name="Colocar Pedido" owner="checkout_review_page">
 <kw name="Scroll Hasta Elemento" owner="common">
@@ -1056,22 +1056,22 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.071082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <var>${visible}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.070082" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="${visible}">
 <return>
-<status status="PASS" start="2026-04-25T00:24:16.071082" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2026-04-25T00:24:16.071082" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.071082" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </if>
 <kw name="Swipe By Percent" owner="AppiumLibrary">
 <arg>50</arg>
@@ -1081,37 +1081,37 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>duration=800</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.071082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <var name="${i}"/>
-<status status="PASS" start="2026-04-25T00:24:16.070082" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </iter>
 <var>${i}</var>
 <value>${max_intentos}</value>
-<status status="PASS" start="2026-04-25T00:24:16.070082" elapsed="0.001000"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </for>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>msg=Elemento ${locator} no encontrado luego de ${max_intentos} swipes.</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.072082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <arg>${PLACE_ORDER_BUTTON}</arg>
 <arg>max_intentos=3</arg>
 <doc>Scroll robusto cross-platform hasta hacer visible el elemento.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.069081" elapsed="0.003001"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${PLACE_ORDER_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.073083" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <var>${ok}</var>
 <arg>Click Element</arg>
 <arg>${PLACE_ORDER_BUTTON}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.072082" elapsed="0.001001"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${ok}">
@@ -1120,27 +1120,27 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.074082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.074082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <arg>${PLACE_ORDER_BUTTON_FB}</arg>
 <doc>Espera a que el elemento sea visible y lo presiona.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.073083" elapsed="0.001999"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-04-25T00:24:16.073083" elapsed="0.001999"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2026-04-25T00:24:16.073083" elapsed="0.001999"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </if>
-<status status="PASS" start="2026-04-25T00:24:16.068082" elapsed="0.007000"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.000000"/>
 </kw>
 <doc>Recorre los 3 pasos del checkout con datos ficticios.
 Datos controlados en un único punto aquí (podrían moverse a
 un variables/test_data.yaml si crecen).</doc>
-<status status="PASS" start="2026-04-25T00:24:16.017553" elapsed="0.057529"/>
+<status status="PASS" start="2026-04-25T06:30:02.677084" elapsed="0.050215"/>
 </kw>
 <kw name="Then el sistema debe mostrar una pantalla de confirmación con el mensaje de éxito" owner="bdd_steps">
 <kw name="Verificar Confirmacion De Compra Exitosa" owner="checkout_complete_page">
@@ -1149,34 +1149,34 @@ un variables/test_data.yaml si crecen).</doc>
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.077081" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.743555" elapsed="0.000000"/>
 </kw>
 <arg>${CHECKOUT_COMPLETE_TITLE}</arg>
 <arg>timeout=${LONG_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.077081" elapsed="0.000000"/>
+<status status="PASS" start="2026-04-25T06:30:02.742556" elapsed="0.000999"/>
 </kw>
 <kw name="Esperar Elemento Visible" owner="common">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.078082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.745549" elapsed="0.000000"/>
 </kw>
 <arg>${THANK_YOU_MESSAGE}</arg>
 <arg>timeout=${DEFAULT_TIMEOUT}</arg>
-<status status="PASS" start="2026-04-25T00:24:16.077081" elapsed="0.001001"/>
+<status status="PASS" start="2026-04-25T06:30:02.744551" elapsed="0.000998"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="AppiumLibrary">
 <arg>filename=checkout_exitoso.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.078082" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.745549" elapsed="0.000000"/>
 </kw>
 <doc>Valida tanto el título de la pantalla como el mensaje de éxito.
 Doble aserción para dar evidencia robusta en el report.html.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.076083" elapsed="0.002998"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.019247"/>
 </kw>
 <doc>Aserción final del escenario: pantalla "Checkout Complete".</doc>
-<status status="PASS" start="2026-04-25T00:24:16.075082" elapsed="0.003999"/>
+<status status="PASS" start="2026-04-25T06:30:02.727299" elapsed="0.019247"/>
 </kw>
 <doc>Un usuario autenticado puede seleccionar un producto,
 completar el checkout con datos válidos y recibir la
@@ -1187,27 +1187,27 @@ pantalla de confirmación de compra exitosa.</doc>
 <tag>mobile</tag>
 <tag>P1</tag>
 <tag>smoke</tag>
-<status status="PASS" start="2026-04-25T00:24:15.972553" elapsed="0.106528"/>
+<status status="PASS" start="2026-04-25T06:30:02.641530" elapsed="0.105016"/>
 </test>
 <kw name="Cerrar Aplicacion" owner="common" type="TEARDOWN">
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.083085" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.748552" elapsed="0.000000"/>
 </kw>
 <arg>Close Application</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="NOT RUN" start="2026-04-25T00:24:16.082082" elapsed="0.001003"/>
+<status status="NOT RUN" start="2026-04-25T06:30:02.748552" elapsed="0.000000"/>
 </kw>
 <doc>Cierra la sesión Appium aun si la prueba falló.</doc>
-<status status="PASS" start="2026-04-25T00:24:16.082082" elapsed="0.002002"/>
+<status status="PASS" start="2026-04-25T06:30:02.748552" elapsed="0.000000"/>
 </kw>
 <doc>Suite E2E: Flujo de compra exitosa en Swag Labs Mobile App.
 Escenarios escritos en sintaxis Gherkin (Given/When/And/Then)
 sobre la app my-demo-app-rn de Sauce Labs.</doc>
-<status status="PASS" start="2026-04-25T00:24:15.343087" elapsed="0.740997"/>
+<status status="PASS" start="2026-04-25T06:30:01.677081" elapsed="1.072470"/>
 </suite>
-<status status="PASS" start="2026-04-25T00:24:15.294072" elapsed="0.794017"/>
+<status status="PASS" start="2026-04-25T06:30:01.627217" elapsed="1.123330"/>
 </suite>
 <statistics>
 <total>

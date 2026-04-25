@@ -18,7 +18,7 @@ Compra exitosa de Sauce Labs Backpack
     ...                completar el checkout con datos válidos y recibir la
     ...                pantalla de confirmación de compra exitosa.
     [Tags]             happy-path    smoke    P1
-    Given que el usuario está en la pantalla de Login
+    Given que el usuario abre la aplicación y se encuentra en la pantalla de Login
     When el usuario ingresa las credenciales válidas    bob@example.com    10203040
     And selecciona el producto "Sauce Labs Backpack" para añadirlo al carrito
     And completa el proceso de Checkout con datos ficticios

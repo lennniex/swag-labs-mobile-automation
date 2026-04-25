@@ -20,7 +20,7 @@ Resource         ../pages/checkout_complete_page.resource
 # ===========================================================================
 # GIVEN
 # ===========================================================================
-que el usuario está en la pantalla de Login
+que el usuario abre la aplicación y se encuentra en la pantalla de Login
     Verificar Que Estoy En Login
 
 # ===========================================================================
